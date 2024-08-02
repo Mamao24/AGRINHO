@@ -1,0 +1,106 @@
+body {
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Adicionado para que o posicionamento absoluto dos links funcione corretamente */
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: #0c7aa5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona uma margem inferior para separar do conteúdo */
+}
+
+header h1 {
+    font-size: 28px; /* Aumenta o tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior menor para o título */
+}
+
+.container {
+    padding: 20px; /* Espaçamento interno do conteúdo principal */
+    text-align: center; /* Centraliza conteúdo dentro do container */
+}
+
+.imagem-centrada,
+.imagem-centrada1 {
+    display: inline-block;
+    margin: 10px;
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave na escala */
+}
+
+.imagem-centrada:hover,
+.imagem-centrada1:hover {
+    transform: scale(1.1); /* Aumenta a escala da imagem em 10% quando hover */
+}
+
+h2 {
+    color: #333; /* Cor um pouco mais escura para os títulos */
+    padding: 10px 0; /* Ajuste do padding para melhor espaçamento */
+    text-align: center;
+    font-size: 24px; /* Tamanho de fonte maior para os títulos */
+    margin-top: 30px; /* Adiciona uma margem superior maior */
+    margin-bottom: 15px; /* Adiciona uma margem inferior menor */
+}
+
+p {
+    font-family: "Arial", sans-serif;
+    font-size: 16px; /* Tamanho de fonte um pouco menor para facilitar a leitura */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
+    margin-bottom: 15px; /* Adiciona uma margem inferior para separar os parágrafos */
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para imagens */
+    .imagem-centrada,
+    .imagem-centrada1 {
+        width: 100%; /* Faz as imagens ocuparem 100% da largura do container */
+    }
+
+    /* Ajuste para parágrafos */
+    p {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+}
+
+/* Estilos para o botão "Saiba mais" */
+.saiba-mais {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.botao-saiba-mais {
+    display: inline-block;
+    background-color: #0c7aa5; /* Cor do header */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.botao-saiba-mais:hover {
+    background-color: #095d80; /* Cor ligeiramente mais escura ao passar o mouse */
+}

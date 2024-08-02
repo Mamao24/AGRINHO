@@ -1,0 +1,95 @@
+/* Reset básico e estilos gerais */
+body {
+    color: #333;
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #0c7aa5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o conteúdo principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Espaçamento maior antes do primeiro parágrafo */
+.container p:first-of-type {
+    margin-top: 20px;
+}
+
+/* Estilo para a lista ordenada */
+.container ol {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.container ol li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos para o botão "Voltar ao Meu Site" */
+.voltar-site {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.botao-voltar {
+    display: inline-block;
+    background-color: #0c7aa5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.botao-voltar:hover {
+    background-color: #095d80;
+}
+
+/* Media queries para ajustes responsivos */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+
+    .container ol {
+        padding-left: 15px;
+    }
+}
