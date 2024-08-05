@@ -52,16 +52,7 @@ header h1 {
     line-height: 1.6;
 }
 
-/* Estilos para o rodapé */
-footer {
-    background-color: #5bbe42;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+
 
 /* Estilos para o botão "Voltar ao Meu Site" */
 .voltar-site {
@@ -108,3 +99,15 @@ footer p {
         padding-left: 15px;
     }
 }
+
+footer {
+    background-color: #095d80;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #000;
+}
+
