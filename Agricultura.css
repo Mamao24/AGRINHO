@@ -104,3 +104,15 @@ p {
 .botao-saiba-mais:hover {
     background-color: #095d80; /* Cor ligeiramente mais escura ao passar o mouse */
 }
+
+footer {
+    background-color: #095d80;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #000;
+}
+
